@@ -6,7 +6,7 @@ const projects: Project[] = [
     summary: "Interactive Power BI dashboard analyzing Indian startup trends (Data cleaned with R).",
     tools: ["Power BI", "R"],
     githubLink: "https://github.com/Ashh-2004",
-    previewImage: "/startup-dashboard.jpg",
+    previewImage: "https://placehold.co/600x400.png",
     dataAiHint: "dashboard analytics",
   },
   {
@@ -14,7 +14,7 @@ const projects: Project[] = [
     summary: "Gemini-powered NLP chatbot for emotional support and crisis detection.",
     tools: ["Gemini", "NLP", "Python"],
     githubLink: "https://github.com/Ashh-2004",
-    previewImage: "/ai-chatbot.jpg",
+    previewImage: "https://placehold.co/600x400.png",
     dataAiHint: "chatbot interface",
   },
   {
@@ -22,7 +22,7 @@ const projects: Project[] = [
     summary: "Accident trend analysis and regression modeling using Pandas and Matplotlib.",
     tools: ["Pandas", "Matplotlib", "Python"],
     githubLink: "https://github.com/Ashh-2004",
-    previewImage: "/traffic-analysis.jpg",
+    previewImage: "https://placehold.co/600x400.png",
     dataAiHint: "traffic map",
   },
   {
@@ -30,7 +30,7 @@ const projects: Project[] = [
     summary: "A term paper exploring the integration of IoT, AI, and Machine Learning, with a focus on intrusion detection systems using DNN and fuzzy logic.",
     tools: ["IoT", "AI/ML", "DNN", "Fuzzy Logic"],
     githubLink: "https://github.com/Ashh-2004",
-    previewImage: "/iot-paper.jpg",
+    previewImage: "https://placehold.co/600x400.png",
     dataAiHint: "security system",
   },
 ];
