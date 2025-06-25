@@ -23,7 +23,7 @@ export function AboutSection() {
             <div className="space-y-2">
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I’m Ashish Ramana, a Data Analytics student at St. Joseph's University, passionate about transforming raw data into meaningful insights. I thrive on leveraging Python, SQL, and visualization tools like Tableau to solve real-world problems. My drive comes from creating innovative solutions, like AI chatbots and startup dashboards, that make a tangible impact. I’m motivated by continuous learning and collaborating to drive business growth through data.
+                I’m Ashish Ramana, a recent graduate with a degree in Data Analytics from St. Joseph's University, passionate about transforming raw data into meaningful insights. I thrive on leveraging Python, SQL, and visualization tools like Tableau to solve real-world problems. My drive comes from creating innovative solutions, like AI chatbots and startup dashboards, that make a tangible impact. I’m motivated by continuous learning and collaborating to drive business growth through data.
               </p>
             </div>
             <div className="space-y-4">
@@ -35,7 +35,7 @@ export function AboutSection() {
                   </div>
                   <p className="font-bold">BCA in Data Analytics</p>
                   <p className="text-sm">St. Joseph's University, Bengaluru</p>
-                  <p className="text-sm text-muted-foreground">2022 – 2025</p>
+                  <p className="text-sm text-muted-foreground">2021 – 2024</p>
                 </div>
               </div>
             </div>
