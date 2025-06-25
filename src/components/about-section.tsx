@@ -35,7 +35,7 @@ export function AboutSection() {
                   </div>
                   <p className="font-bold">BCA in Data Analytics</p>
                   <p className="text-sm">St. Joseph's University, Bengaluru</p>
-                  <p className="text-sm text-muted-foreground">2021 – 2024</p>
+                  <p className="text-sm text-muted-foreground">2022 – 2025</p>
                 </div>
               </div>
             </div>
