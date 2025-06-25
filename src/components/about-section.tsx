@@ -40,7 +40,7 @@ export function AboutSection() {
               </div>
             </div>
             <Button asChild>
-              <Link href="/resume.pdf" target="_blank" download>
+              <Link href="/Ashish's Resume.pdf" target="_blank" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Link>
