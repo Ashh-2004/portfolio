@@ -26,8 +26,8 @@ const projects: Project[] = [
     dataAiHint: "traffic map",
   },
   {
-    title: "IoT + AI/ML for Intrusion Detection",
-    summary: "DNN-based intrusion detector with fuzzy logic for 30% manufacturing boost.",
+    title: "Integration of IoT with AI and ML",
+    summary: "A term paper exploring the integration of IoT, AI, and Machine Learning, with a focus on intrusion detection systems using DNN and fuzzy logic.",
     tools: ["IoT", "AI/ML", "DNN", "Fuzzy Logic"],
     githubLink: "https://github.com/Ashh-2004",
     previewImage: "https://placehold.co/600x400.png",
