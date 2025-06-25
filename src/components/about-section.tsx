@@ -10,7 +10,7 @@ export function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex justify-center">
             <img
-              src="https://placehold.co/400x400.png"
+              src="/profile.png"
               alt="M Ashish Ramana"
               width={400}
               height={400}
