@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex justify-center">
             <Image
-              src="/avatar.png"
+              src="/avatar.jpg"
               alt="M Ashish Ramana"
               width={400}
               height={400}
