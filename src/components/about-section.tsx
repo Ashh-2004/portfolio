@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
@@ -10,13 +9,12 @@ export function AboutSection() {
       <div className="container mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex justify-center">
-            <Image
+            <img
               src="/profile.png"
               alt="M Ashish Ramana"
               width={400}
               height={400}
               className="rounded-full object-cover shadow-lg"
-              data-ai-hint="professional photo"
             />
           </div>
           <div className="space-y-6">
