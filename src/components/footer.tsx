@@ -1,3 +1,6 @@
+"use client";
+
+import * as React from "react";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -8,12 +11,17 @@ const socialLinks = [
 ];
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [year, setYear] = React.useState<number | string>("");
+
+  React.useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="w-full border-t bg-muted">
       <div className="container mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:flex-row md:px-6">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear} M Ashish Ramana. All rights reserved.
+          &copy; {year} M Ashish Ramana. All rights reserved.
         </p>
         <div className="flex items-center gap-2">
             {socialLinks.map(({icon: Icon, href, label}) => (
