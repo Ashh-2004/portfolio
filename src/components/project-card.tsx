@@ -82,7 +82,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         alt={project.title}
         width={600}
         height={400}
-        className="h-auto w-full object-cover"
+        className="w-full h-56 object-cover"
         data-ai-hint={project.dataAiHint}
       />
       <CardHeader>
