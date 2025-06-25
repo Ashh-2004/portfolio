@@ -7,6 +7,7 @@ import { Menu, Mountain } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "./theme-toggle";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -42,47 +43,50 @@ export function Header() {
           <Mountain className="h-6 w-6 text-primary" />
           <span className="font-headline text-lg font-semibold">Ashish Ramana</span>
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={href}
-              className="font-medium text-foreground/70 transition-colors hover:text-foreground"
-              prefetch={false}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
-        <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle navigation menu</span>
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <div className="flex flex-col gap-6 p-6">
-              <Link href="#home" className="flex items-center gap-2" prefetch={false} onClick={closeSheet}>
-                <Mountain className="h-6 w-6 text-primary" />
-                <span className="font-headline text-lg font-semibold">Ashish Ramana</span>
+        <div className="flex items-center gap-2">
+          <nav className="hidden items-center gap-6 md:flex">
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="font-medium text-foreground/70 transition-colors hover:text-foreground"
+                prefetch={false}
+              >
+                {label}
               </Link>
-              <nav className="flex flex-col gap-4">
-                {navLinks.map(({ href, label }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    className="text-lg font-medium text-foreground/70 transition-colors hover:text-foreground"
-                    prefetch={false}
-                    onClick={closeSheet}
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-          </SheetContent>
-        </Sheet>
+            ))}
+          </nav>
+          <ThemeToggle />
+          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col gap-6 p-6">
+                <Link href="#home" className="flex items-center gap-2" prefetch={false} onClick={closeSheet}>
+                  <Mountain className="h-6 w-6 text-primary" />
+                  <span className="font-headline text-lg font-semibold">Ashish Ramana</span>
+                </Link>
+                <nav className="flex flex-col gap-4">
+                  {navLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      className="text-lg font-medium text-foreground/70 transition-colors hover:text-foreground"
+                      prefetch={false}
+                      onClick={closeSheet}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
