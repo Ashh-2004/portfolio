@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of M Ashish Ramana, Data Analyst">
+    <title>M Ashish Ramana | Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-bar bar-1"></div>
+                <div class="logo-bar bar-2"></div>
+                <div class="logo-bar bar-3"></div>
+            </div>
+            <nav class="nav-links">
+                <a href="#about" class="label">About</a>
+                <a href="#skills" class="label">Skills</a>
+                <a href="#projects" class="label">Projects</a>
+                <a href="#resume" class="label">Resume</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <!-- Icon will be injected via JS -->
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="badge-floating">AVAILABLE FOR WORK</div>
+                <h1 class="display" id="hero-name">Loading...</h1>
+                <p class="heading text-secondary" id="hero-title">Loading...</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="button-primary">View Projects</a>
+                    <div class="contact-links" id="hero-contact-links">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="abstract-shape"></div>
+                <div class="abstract-glow"></div>
+            </div>
+        </section>
+
+        <!-- About & Timeline Section -->
+        <section class="section about-section" id="about">
+            <h2 class="label section-label">Background</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="body" id="about-text">Loading...</p>
+                </div>
+                <div class="timeline-container">
+                    <h3 class="label" style="margin-bottom: 16px; color: var(--text-primary);">Experience</h3>
+                    <div class="education-timeline" id="experience-container">
+                        <!-- Injected via JS -->
+                    </div>
+                    
+                    <h3 class="label" style="margin-bottom: 16px; margin-top: 32px; color: var(--text-primary);">Education</h3>
+                    <div class="education-timeline" id="education-container">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <h2 class="label section-label">Technical Arsenal</h2>
+            <div class="skills-grid" id="skills-container">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <h2 class="label section-label">Featured Work</h2>
+            <div class="projects-container" id="projects-container">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- Dark Section: Certifications & Impact -->
+        <section class="section dark-section">
+            <div class="dark-content">
+                <h2 class="label section-label">Certifications</h2>
+                <div class="cert-list" id="certs-container">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+            <div class="noise-overlay"></div>
+        </section>
+
+        <!-- Footer / Resume Section -->
+        <footer class="footer" id="resume">
+            <h2 class="display footer-heading">Let's build<br>something.</h2>
+            <div class="footer-actions">
+                <a href="#" id="resume-btn" class="button-primary" target="_blank">Download Resume</a>
+                <a href="mailto:ashishramana1708@gmail.com" class="button-outline label">Email Me</a>
+            </div>
+            <div class="footer-bottom">
+                <p class="label">© <span id="current-year"></span> M Ashish Ramana</p>
+                <div class="footer-links" id="footer-contact-links">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="module" src="main.js"></script>
+</body>
+</html>
