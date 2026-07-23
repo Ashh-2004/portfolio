@@ -56,14 +56,6 @@ export const portfolioData = {
       link: "https://github.com/Ashh-2004", // Update with specific repo link when available
       linkText: "View on GitHub"
     }
-    {
-      title: "LoanSense AI : Intelligent Loan Mangement System",
-      technologies: ["Python", "Scikit-Learn","MySQL"],
-      description: "Built a full ",
-      metrics: "Implemented controlled, non-diagnostic responses in real-time.",
-      link: "https://github.com/Ashh-2004", // Update with specific repo link when available
-      linkText: "View on GitHub"
-    }
   ],
   experience: [
     // To add experience in the future, uncomment the block below and fill in your details!
