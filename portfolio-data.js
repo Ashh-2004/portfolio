@@ -52,6 +52,16 @@ const portfolioData = {
   */
 
   projects: [
+     {
+      title: "PathFinder AI",
+      technologies: ["Python", "React", "NLP","spacy"],
+      description: "AI-powered career guidance platform that analyzes resumes, identifies skill gaps, and generates personalized learning roadmaps based on a user's target role. It combines FastAPI, React, and LLM-powered recommendations to help users make informed career decisions through an interactive and intuitive interface.",
+      metrics: "Built a full-stack AI platform with resume analysis, personalized career roadmaps, and role-based skill recommendations, reducing manual career planning effort by over 80% through automation.",
+      githubLink: "https://github.com/Ashh-2004",
+      liveLink: "https://ashh-2004.github.io/Pathfinder-AI/",
+      linkText: "View on GitHub",
+      image: "" // Leave empty for a sleek interactive mockup placeholder, or add image URL/file path
+    },
     {
       title: "Telecom Customer Churn Analysis & Prediction",
       technologies: ["Python", "Scikit-learn", "Pandas"],
