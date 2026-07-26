@@ -33,20 +33,21 @@ const portfolioData = {
 
   /*
     ========================================================================
-    💡 HOW TO ADD A NEW PROJECT (SUPER SIMPLE!):
+    💡 HOW TO ADD A NEW PROJECT (WITH SEPARATE REPO & LIVE LINKS!):
     ========================================================================
-    Just copy and paste the template below into the `projects` list!
-    All fields are optional except `title`. If you leave any field out, 
-    the portfolio handles it automatically without breaking.
+    Copy and paste this block into the `projects` list below:
 
     {
-      title: "My New Project Title",
-      technologies: ["Python", "Power BI", "SQL"],
+      title: "My New Analytics Dashboard",
+      technologies: ["Power BI", "Python", "SQL"],
       description: "A short description of what this project accomplishes.",
       metrics: "Optional key result (e.g. Improved accuracy by 25%).",
-      link: "https://github.com/your-username/your-repo", // GitHub or Live working link
-      linkText: "View Code / Live Link", // Optional button text (defaults to 'View Project')
-      image: "assets/my-screenshot.png" // Optional image path or leave blank ""
+      
+      githubLink: "https://github.com/Ashh-2004/your-repo", // GitHub repository URL
+      liveLink: "https://your-live-demo-or-powerbi-url.com", // Live working app / PowerBI / Web demo URL (Opened when image is clicked!)
+      linkText: "View Code", // Optional label for GitHub button
+      
+      image: "assets/dashboard.png" // Screenshot path or leave blank ""
     },
   */
 
@@ -56,16 +57,18 @@ const portfolioData = {
       technologies: ["Python", "Scikit-learn", "Pandas"],
       description: "Analyzed telecom customer data to identify churn patterns and key retention drivers using statistical analysis. Built a highly accurate churn prediction model to support targeted customer retention strategies.",
       metrics: "Achieved 0.96 ROC-AUC and 90% recall on the prediction model.",
-      link: "https://github.com/Ashh-2004",
+      githubLink: "https://github.com/Ashh-2004",
+      liveLink: "https://github.com/Ashh-2004", // Update with live working app URL if available
       linkText: "View on GitHub",
-      image: "" // Leave empty for a sleek interactive mockup placeholder, or add image URL/file path
+      image: ""
     },
     {
       title: "Startup India Funding Analysis Dashboard",
       technologies: ["Power BI", "Excel", "R"],
       description: "Cleaned and transformed public startup funding datasets via ETL processes. Developed interactive business intelligence dashboards to analyze funding trends across different states and sectors.",
       metrics: "Enabled visual comparison of high-growth and underfunded regions.",
-      link: "https://github.com/Ashh-2004/startup-india-dashboard",
+      githubLink: "https://github.com/Ashh-2004/startup-india-dashboard",
+      liveLink: "https://github.com/Ashh-2004/startup-india-dashboard", // Replace with Power BI / Live dashboard web link
       linkText: "View Dashboard Repo",
       image: ""
     },
@@ -74,7 +77,8 @@ const portfolioData = {
       technologies: ["Python", "Gemini API", "Hugging Face", "Discord"],
       description: "Built an academic project chatbot using the Gemini API for generative responses and Hugging Face models for NLP preprocessing. Scraped Reddit data to design intent categories, and deployed the final system as a Discord bot.",
       metrics: "Implemented controlled, non-diagnostic responses in real-time.",
-      link: "https://github.com/Ashh-2004",
+      githubLink: "https://github.com/Ashh-2004",
+      liveLink: "https://github.com/Ashh-2004",
       linkText: "View on GitHub",
       image: ""
     },
@@ -83,8 +87,10 @@ const portfolioData = {
       technologies: ["Python", "NLP", "Pandas", "Matplotlib"],
       description: "Extracted e-commerce customer reviews and applied NLP sentiment scoring algorithms to quantify product satisfaction trends and customer sentiment shifts.",
       metrics: "Processed 50,000+ review entries with 92% classification accuracy.",
-      link: "https://github.com/Ashh-2004",
-      linkText: "View Project Repo"
+      githubLink: "https://github.com/Ashh-2004",
+      liveLink: "https://github.com/Ashh-2004",
+      linkText: "View Project Repo",
+      image: ""
     }
   ],
   experience: [

@@ -131,26 +131,44 @@ document.addEventListener('DOMContentLoaded', () => {
             const description = project.description ? `<p class="body project-desc">${project.description}</p>` : '';
             const metrics = project.metrics ? `<p class="body project-metrics">${project.metrics}</p>` : '';
             
-            // Links
-            const targetLink = project.link || project.liveLink || '#';
-            const linkText = project.linkText || (project.link ? 'View Live Project ↗' : 'Project Details');
-            const hasValidLink = Boolean(project.link || project.liveLink);
+            // Separate Links: GitHub Repo vs Live Project Demo
+            const githubUrl = project.githubLink || project.link || '';
+            const liveUrl = project.liveLink || project.demoLink || githubUrl || '';
 
-            const buttonHtml = hasValidLink 
-                ? `<a href="${targetLink}" target="_blank" rel="noopener noreferrer" class="button-outline label">${linkText}</a>`
-                : `<span class="button-outline label disabled-btn">In Progress</span>`;
+            // Buttons HTML
+            const githubText = project.linkText || 'View Code';
+            
+            let buttonsArr = [];
+            if (githubUrl) {
+                buttonsArr.push(`<a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="button-outline label">${githubText}</a>`);
+            }
+            if (project.liveLink && project.liveLink !== githubUrl) {
+                buttonsArr.push(`<a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="button-primary label" style="padding: 10px 20px;">Live Demo ↗</a>`);
+            }
+            if (buttonsArr.length === 0 && liveUrl) {
+                buttonsArr.push(`<a href="${liveUrl}" target="_blank" rel="noopener noreferrer" class="button-outline label">View Project ↗</a>`);
+            }
+            if (buttonsArr.length === 0) {
+                buttonsArr.push(`<span class="button-outline label disabled-btn">In Progress</span>`);
+            }
+
+            const buttonsHtml = `<div style="display: flex; gap: 12px; flex-wrap: wrap;">${buttonsArr.join('')}</div>`;
 
             // Mockup / Visual HTML
             const innerVisual = project.image 
                 ? `<img src="${project.image}" alt="${title}">`
                 : `<div class="mockup-placeholder"><span class="label project-mockup-text">Project Visual ${index + 1}</span></div>`;
 
-            const mockupWrapperHtml = hasValidLink
-                ? `<a href="${targetLink}" target="_blank" rel="noopener noreferrer" class="project-mockup-link" title="Click to view live project: ${title}">
+            // Clickable Image Mockup Wrapper pointing directly to liveUrl (Live Working Project Link)
+            const isDistinctLiveLink = Boolean(project.liveLink && project.liveLink !== githubUrl);
+            const overlayBadgeText = isDistinctLiveLink ? 'Open Live Demo ↗' : 'Open Project Link ↗';
+
+            const mockupWrapperHtml = liveUrl
+                ? `<a href="${liveUrl}" target="_blank" rel="noopener noreferrer" class="project-mockup-link" title="Open Live Project: ${title}">
                     <div class="project-mockup">
                         ${innerVisual}
                         <div class="project-mockup-overlay">
-                            <span class="label overlay-badge">Open Live Link ↗</span>
+                            <span class="label overlay-badge">${overlayBadgeText}</span>
                         </div>
                     </div>
                    </a>`
@@ -165,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${techHtml ? `<div class="project-tech">${techHtml}</div>` : ''}
                         ${description}
                         ${metrics}
-                        <div>${buttonHtml}</div>
+                        ${buttonsHtml}
                     </div>
                     ${mockupWrapperHtml}
                 </div>

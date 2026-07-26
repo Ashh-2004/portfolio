@@ -4,7 +4,7 @@ Welcome to your Data Science & Analytics Portfolio! Built with clean HTML, moder
 
 ---
 
-## ⚡ 1. Adding a New Project (Super Easy & Fast!)
+## ⚡ 1. Adding a New Project with GitHub & Live Demo Links
 
 All your portfolio data lives in **`portfolio-data.js`**. To add a new project:
 
@@ -18,21 +18,25 @@ All your portfolio data lives in **`portfolio-data.js`**. To add a new project:
       technologies: ["Python", "SQL", "Power BI"],
       description: "Brief summary of what your project does and what insights it unlocks.",
       metrics: "Optional key result (e.g. Reduced processing time by 40%).",
-      link: "https://github.com/Ashh-2004/your-repo-name", // Your GitHub or Live Working Link
-      linkText: "View Live Project ↗", // Custom button label (default: View Live Project ↗)
-      image: "" // Optional screenshot path (e.g. "assets/dashboard.png") or leave "" for auto visual
+      
+      // Separate GitHub repo link and Live working demo link:
+      githubLink: "https://github.com/Ashh-2004/your-repo-name", // GitHub Code Repo
+      liveLink: "https://your-live-demo-or-powerbi-url.com", // Live working project (Opened when clicking the image!)
+      linkText: "View Code", // Label for GitHub button
+      
+      image: "assets/dashboard.png" // Screenshot path (or leave "" for auto visual mockup)
     },
 ```
 
 > [!TIP]
-> **Clickable Visuals**: Every project visual automatically becomes a clickable thumbnail! Clicking on the project image/mockup directly opens the project link in a new tab.
+> **Clickable Image Visual**: Setting `liveLink` makes your project's screenshot visual open the **Live Working Project / Power BI Dashboard / Streamlit App** directly when clicked!
 
 ---
 
 ## 🌗 2. Testing Locally
 
-- **Double Click**: You can simply double-click `index.html` in Windows Explorer to open it directly in Chrome, Edge, or Firefox!
-- **Local Server**: You can also run `python -m http.server 8000` in terminal and visit `http://localhost:8000`.
+- **Double Click**: Simply double-click `index.html` in Windows Explorer to open it directly in Chrome, Edge, or Firefox!
+- **Local Server**: Run `python -m http.server 8080` in terminal and visit `http://localhost:8080`.
 
 ---
 
@@ -41,4 +45,4 @@ All your portfolio data lives in **`portfolio-data.js`**. To add a new project:
 1. Commit and push your changes to your GitHub repository.
 2. Go to **Settings > Pages** in your repo on GitHub.
 3. Set **Source** to `main` branch and `/ (root)` folder, then click **Save**.
-4. Your site will automatically update at `https://Ashh-2004.github.io/...`!
+4. Your site will automatically update at `https://Ashh-2004.github.io/portfolio/`!
