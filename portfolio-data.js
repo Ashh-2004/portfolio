@@ -60,7 +60,17 @@ const portfolioData = {
       githubLink: "https://github.com/Ashh-2004",
       liveLink: "https://ashh-2004.github.io/Pathfinder-AI/",
       linkText: "View on GitHub",
-      image: "" // Leave empty for a sleek interactive mockup placeholder, or add image URL/file path
+      image: "assets/pathfinderai.png" // Leave empty for a sleek interactive mockup placeholder, or add image URL/file path
+    },
+    {
+      title: "Global Weather Intelligence",
+      technologies: ["JavaScript", "HTML5", "REST API"],
+      description: "A responsive weather application that provides real-time weather conditions and multi-day forecasts for any location using a weather API. The project features dynamic weather visuals, temperature unit conversion, and a clean, mobile-friendly interface while demonstrating API integration and asynchronous JavaScript programming.",
+      metrics: "Built a responsive weather dashboard with real-time forecasts, reducing weather lookup time by over 90% through instant API-powered search and dynamic UI updates.",
+      githubLink: "https://github.com/Ashh-2004/weather-app",
+      liveLink: "https://ashh-2004.github.io/weather-app/",
+      linkText: "View on GitHub",
+      image: "assets/weather.png"
     },
     {
       title: "Telecom Customer Churn Analysis & Prediction",
@@ -92,16 +102,6 @@ const portfolioData = {
       linkText: "View on GitHub",
       image: ""
     },
-    {
-      title: "AI Customer Sentiment Analysis Pipeline",
-      technologies: ["Python", "NLP", "Pandas", "Matplotlib"],
-      description: "Extracted e-commerce customer reviews and applied NLP sentiment scoring algorithms to quantify product satisfaction trends and customer sentiment shifts.",
-      metrics: "Processed 50,000+ review entries with 92% classification accuracy.",
-      githubLink: "https://github.com/Ashh-2004",
-      liveLink: "https://github.com/Ashh-2004",
-      linkText: "View Project Repo",
-      image: ""
-    }
   ],
   experience: [
     // To add experience in the future, uncomment the block below and fill in your details!
