@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="avatar_bg" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181B28"/>
+      <stop offset="1" stop-color="#0B0D13"/>
+    </linearGradient>
+    <linearGradient id="accent_grad" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset="1" stop-color="#FB923C"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="200" fill="url(#avatar_bg)"/>
+  <circle cx="200" cy="200" r="195" stroke="url(#accent_grad)" stroke-width="4" stroke-dasharray="8 6"/>
+  
+  <!-- Silhouette Profile with AI nodes -->
+  <circle cx="200" cy="150" r="55" fill="#2A3044"/>
+  <path d="M 110 320 C 110 245, 150 225, 200 225 C 250 225, 290 245, 290 320 Z" fill="#2A3044"/>
+
+  <!-- Neural Connection Nodes -->
+  <circle cx="160" cy="135" r="4" fill="#F97316"/>
+  <circle cx="240" cy="135" r="4" fill="#F97316"/>
+  <circle cx="200" cy="170" r="4" fill="#F97316"/>
+  <line x1="160" y1="135" x2="200" y2="170" stroke="#F97316" stroke-width="1.5" opacity="0.6"/>
+  <line x1="240" y1="135" x2="200" y2="170" stroke="#F97316" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Initials Badge -->
+  <rect x="140" y="305" width="120" height="34" rx="17" fill="#F97316"/>
+  <text x="200" y="328" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1">M. ASHISH</text>
+</svg>

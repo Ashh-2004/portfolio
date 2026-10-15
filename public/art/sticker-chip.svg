@@ -1,0 +1,31 @@
+<svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Die-cut Backing -->
+  <rect x="18" y="18" width="104" height="104" rx="22" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+  <!-- Chip Pins Outer -->
+  <line x1="38" y1="8" x2="38" y2="18" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="58" y1="8" x2="58" y2="18" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="78" y1="8" x2="78" y2="18" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="98" y1="8" x2="98" y2="18" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="38" y1="122" x2="38" y2="132" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="58" y1="122" x2="58" y2="132" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="78" y1="122" x2="78" y2="132" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="98" y1="122" x2="98" y2="132" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="8" y1="38" x2="18" y2="38" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="8" y1="58" x2="18" y2="58" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="8" y1="78" x2="18" y2="78" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="8" y1="98" x2="18" y2="98" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+
+  <line x1="122" y1="38" x2="132" y2="38" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="122" y1="58" x2="132" y2="58" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="122" y1="78" x2="132" y2="78" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+  <line x1="122" y1="98" x2="132" y2="98" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Sunburst Body -->
+  <rect x="24" y="24" width="92" height="92" rx="16" fill="#ffd731" stroke="#000000" stroke-width="2" />
+
+  <!-- Inner Core -->
+  <rect x="42" y="42" width="56" height="56" rx="10" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="52" y="78" font-family="'Bowlby One', Impact, sans-serif" font-size="22" fill="#000000">AI</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Die-cut Backing Silhouette -->
+  <rect x="8" y="8" width="114" height="114" rx="22" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+  <!-- Body: Soft Mist or Electric Blue -->
+  <rect x="14" y="14" width="102" height="102" rx="18" fill="#4da2ff" stroke="#000000" stroke-width="1.5" />
+
+  <!-- Main Trunk Line -->
+  <line x1="42" y1="32" x2="42" y2="98" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Branch Curve Line -->
+  <path d="M 42 66 C 42 50, 88 58, 88 42" stroke="#000000" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- Commit Nodes -->
+  <!-- Top Main -->
+  <circle cx="42" cy="32" r="8" fill="#ffd731" stroke="#000000" stroke-width="3" />
+  <!-- Branch Node -->
+  <circle cx="88" cy="42" r="8" fill="#55db9c" stroke="#000000" stroke-width="3" />
+  <!-- Bottom Main -->
+  <circle cx="42" cy="98" r="8" fill="#ffffff" stroke="#000000" stroke-width="3" />
+</svg>
