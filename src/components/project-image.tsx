@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface ProjectImageProps {
@@ -21,6 +21,10 @@ export function ProjectImage({
   className = "",
 }: ProjectImageProps) {
   const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    setHasError(false);
+  }, [src]);
 
   // Compute initials (e.g. "LoanSense AI" -> "LS", "SecurePay" -> "SP")
   const initials = projectName
@@ -59,7 +63,7 @@ export function ProjectImage({
         src={src}
         alt={alt}
         fill
-        className="object-cover transition-transform duration-200 group-hover:scale-105"
+        className="object-cover object-top transition-transform duration-200 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 50vw"
         priority={priority}
         unoptimized

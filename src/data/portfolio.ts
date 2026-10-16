@@ -263,11 +263,15 @@ export const portfolio: PortfolioData = {
       screenshots: [
         {
           src: "/projects/loansense/screenshot-1.png",
-          caption: "Credit risk score prediction and borrower risk probability dashboard",
+          caption: "XGBoost Classifier confusion matrix & performance metrics (51.56% Recall, 57.12% F1)",
         },
         {
           src: "/projects/loansense/screenshot-2.png",
-          caption: "SHAP explanation plot detailing influential risk factors for loan decisions",
+          caption: "Baseline Logistic Regression evaluation & confusion matrix benchmark",
+        },
+        {
+          src: "/projects/loansense/screenshot-3.png",
+          caption: "Natural-Language-to-SQL query assistant translating English queries into SQL",
         },
       ],
       featured: true,
@@ -334,11 +338,15 @@ export const portfolio: PortfolioData = {
       screenshots: [
         {
           src: "/projects/employeemate/screenshot-1.png",
-          caption: "Context-aware conversational interface with verified HR source citations",
+          caption: "Knowledge Agent RAG interface answering HR queries with source citations",
         },
         {
           src: "/projects/employeemate/screenshot-2.png",
-          caption: "Agent routing and CrossEncoder reranked knowledge retrieval architecture",
+          caption: "HR Specialist Agent executing automated leave application workflows",
+        },
+        {
+          src: "/projects/employeemate/screenshot-3.png",
+          caption: "Security portal authentication with role-based JWT access control",
         },
       ],
       featured: true,
@@ -467,11 +475,7 @@ export const portfolio: PortfolioData = {
       screenshots: [
         {
           src: "/projects/pathfinder/screenshot-1.png",
-          caption: "Interactive resume parsing dashboard with extracted entity visualization",
-        },
-        {
-          src: "/projects/pathfinder/screenshot-2.png",
-          caption: "Target role skill-gap analysis with tailored curriculum recommendations",
+          caption: "Resume and job description intake interface powered by spaCy NLP",
         },
       ],
       featured: false,

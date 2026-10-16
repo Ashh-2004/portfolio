@@ -31,6 +31,13 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [imageError, setImageError] = useState(false);
 
+  // Reset slide, error and tab when project changes
+  useEffect(() => {
+    setCurrentSlide(0);
+    setImageError(false);
+    setActiveTab("overview");
+  }, [project?.slug]);
+
   // Handle escape key to close
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -128,7 +135,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     {project.name}
                   </div>
                   <div className="text-xs text-carbon/70 max-w-sm mt-1 font-sans">
-                    {screenshots[currentSlide].caption || "System Architecture & Interface Preview"}
+                    {screenshots[currentSlide]?.caption || "System Architecture & Interface Preview"}
                   </div>
                 </div>
               )}
@@ -174,7 +181,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               )}
 
               {/* Caption */}
-              {!imageError && screenshots[currentSlide].caption && (
+              {!imageError && screenshots[currentSlide]?.caption && (
                 <div className="absolute top-3 left-3 bg-paper-white border border-carbon text-carbon text-xs font-sans font-bold px-3 py-1 rounded-pill max-w-[85%] truncate">
                   {screenshots[currentSlide].caption}
                 </div>
