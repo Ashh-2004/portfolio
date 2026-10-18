@@ -205,7 +205,7 @@ export const portfolio: PortfolioData = {
     {
       slug: "loansense-ai",
       name: "LoanSense AI",
-      year: "2025",
+      year: "May 2026",
       tagline: "Explainable Credit Risk & Scoring Platform with Natural Language SQL",
       problem:
         "Credit underwriting teams frequently struggle with false negatives in borrower evaluation—where credit default risks are missed by rigid scorecards or hidden inside opaque black-box models.",
@@ -279,7 +279,7 @@ export const portfolio: PortfolioData = {
     {
       slug: "employeemate",
       name: "EmployeeMate",
-      year: "2025",
+      year: "Sept 2026",
       tagline: "RAG & Agentic Employee Assistant with Vector Memory and Guardrails",
       problem:
         "Employees waste substantial time searching dense multi-document company handbooks, benefit policies, and internal guides, while standard LLMs suffer from hallucinations or ungrounded responses.",
@@ -334,6 +334,7 @@ export const portfolio: PortfolioData = {
       ],
       links: {
         github: "https://github.com/Ashh-2004/EmployeeMate",
+        live: "https://frontend-sooty-xi-27.vercel.app",
       },
       screenshots: [
         {
@@ -354,7 +355,7 @@ export const portfolio: PortfolioData = {
     {
       slug: "securepay-fraud-detection",
       name: "SecurePay",
-      year: "2024",
+      year: "June 2026",
       tagline: "Banking Fraud Detection Engine (5 Rules Evaluated in <1 ms Benchmark)",
       problem:
         "High-volume financial transaction gateways require instantaneous screening for suspicious card activity without incurring network latency overhead or sending sensitive raw cardholder data to third-party APIs.",
@@ -421,7 +422,7 @@ export const portfolio: PortfolioData = {
     {
       slug: "pathfinder-ai",
       name: "PathFinder AI",
-      year: "2024",
+      year: "May 2026",
       tagline: "Resume Analysis & Skill-Gap Mapping with Automated Recommendations",
       problem:
         "Job seekers and students lack structured visibility into missing technical skills when tailoring unstructured resumes to specific target software or data roles.",
@@ -511,6 +512,7 @@ export const portfolio: PortfolioData = {
         "spaCy",
         "CrossEncoder Reranking",
         "Ollama (Local LLMs)",
+        "Hugging Face",
       ],
     },
     {
@@ -519,8 +521,9 @@ export const portfolio: PortfolioData = {
       items: [
         "Power BI",
         "Tableau",
+        "R Markdown",
         "Exploratory Data Analysis (EDA)",
-        "Statistical Analysis",
+        "Statistical Testing",
         "Data Visualization",
       ],
     },
@@ -542,6 +545,7 @@ export const portfolio: PortfolioData = {
         "Next.js",
         "Tailwind CSS",
         "Streamlit",
+        "Taipy",
       ],
     },
     {
@@ -563,18 +567,21 @@ export const portfolio: PortfolioData = {
       period: "2025 – Present",
       location: "Bengaluru, India",
       points: [
-        "Engineered LoanSense AI: trained XGBoost credit risk classifier achieving 51.56% recall (+3.53 pp over baseline) with SHAP explainability and Natural Language SQL querying.",
-        "Developed EmployeeMate: applied RAG assistant utilizing ChromaDB, CrossEncoder reranking (ms-marco-MiniLM-L-6-v2), conversational memory, and local Ollama inference.",
+        "LoanSense AI (May 2026): Trained XGBoost credit risk classifier achieving 51.56% recall (+3.53 pp over baseline) with SHAP explainability and Natural Language SQL querying.",
+        "PathFinder AI (May 2026): Engineered NLP resume analyzer parsing unstructured PDFs and extracting 50+ technical competencies using spaCy Matcher pipelines.",
+        "SecurePay (June 2026): Developed high-performance banking fraud engine in Java/Spring Boot evaluating 5 configurable rules in <1 ms (in-memory benchmark) with local Ollama explanations.",
+        "EmployeeMate (Sept 2026): Built full-stack RAG assistant utilizing ChromaDB, CrossEncoder reranking (ms-marco-MiniLM-L-6-v2), conversational memory, and local Ollama inference.",
       ],
     },
     {
-      role: "BCA Software & NLP Capstone Projects",
+      role: "BCA Data Analytics, AI & Research Projects",
       company: "St. Joseph's University",
       period: "2022 – 2025",
       location: "Bengaluru, India",
       points: [
-        "Developed SecurePay fraud detection engine in Java/Spring Boot evaluating 5 configurable rules in <1 ms (in-memory benchmark) with local Ollama explanations.",
-        "Engineered PathFinder AI: NLP resume analyzer parsing unstructured PDFs and extracting 50+ technical competencies using spaCy Matcher pipelines.",
+        "AI Mental Health Therapist Chatbot (Apr 2025): Developed empathetic AI companion fine-tuned on MentalChat16k & Reddit datasets with dual-model inference (Local + Gemini API), crisis triage, and Taipy interface.",
+        "Research Paper Author (May 2024): Authored 'Sustainable Development through ML, AI & IoT' evaluating predictive environmental models, smart agriculture, and real-time IoT sensor architectures.",
+        "Data Analytics & BI Solutions: Built Startup India interactive Power BI dashboard with R preprocessing analyzing national funding patterns; Telecom Customer Churn predictive modeling on 7,043 customer accounts; and Bangalore vehicle accident severity analysis.",
       ],
     },
   ],
@@ -588,7 +595,7 @@ export const portfolio: PortfolioData = {
       cgpa: "8.57",
       highlights: [
         "Core coursework in Machine Learning, Database Management Systems, and Algorithm Design",
-        "Capstone focus on applied predictive modeling, RAG architectures, and explainable AI",
+        "Engineered 4 MCA capstones: LoanSense AI (May 2026), PathFinder AI (May 2026), SecurePay (June 2026), and EmployeeMate (Sept 2026)",
       ],
     },
     {
@@ -599,12 +606,20 @@ export const portfolio: PortfolioData = {
       cgpa: "7.2",
       highlights: [
         "Rigorous foundation in Data Structures, Object-Oriented Programming (Java), SQL Databases, and Statistics",
-        "Developed capstone projects in banking rule engines and NLP resume entity extraction",
+        "Authored academic research paper: 'Sustainable Development through ML, AI & IoT' (May 2024)",
+        "Built AI Mental Health Chatbot and Power BI / Python data analytics projects",
       ],
     },
   ],
 
-  achievements: [],
+  achievements: [
+    {
+      title: "Author: Research Paper on ML, AI & IoT for Sustainable Development",
+      detail:
+        "Authored and submitted academic research paper analyzing the integration of Machine Learning, AI algorithms, and IoT sensor telemetry to accelerate sustainable development across smart agriculture, energy conservation, and environmental monitoring.",
+      year: "May 2024",
+    },
+  ],
 
   chatbot: {
     enabled: true,
@@ -615,7 +630,7 @@ export const portfolio: PortfolioData = {
       "What are Ashish's strongest ML skills?",
       "Tell me about the LoanSense AI credit risk metrics",
       "How was SecurePay's latency evaluated?",
-      "Is Ashish open to immediate roles?",
+      "Tell me about Ashish's research paper and BCA projects",
     ],
     extraKnowledge: `
 M Ashish Ramana is an AI/ML Engineer and Data Scientist based in Bengaluru, Karnataka, India.
@@ -626,17 +641,23 @@ Education:
 Core Technical Stack:
 - Programming: Python, SQL, Java, R
 - Machine Learning & Data Science: Scikit-learn, XGBoost, Pandas, NumPy, Feature Engineering, Model Validation, SHAP (Explainable AI)
-- GenAI & NLP: RAG Architectures, LangChain, ChromaDB, spaCy, CrossEncoder Reranking, Ollama
-- Data Analytics & BI: Power BI, Tableau, Exploratory Data Analysis (EDA), Statistical Analysis, Data Visualization
+- GenAI & NLP: RAG Architectures, LangChain, ChromaDB, spaCy, CrossEncoder Reranking, Ollama, Hugging Face Transformers
+- Data Analytics & BI: Power BI, Tableau, R Markdown, Exploratory Data Analysis (EDA), Statistical Testing, Data Visualization
 - Backend & APIs: FastAPI, Spring Boot, REST APIs, MySQL
-- Frontend: React, Next.js, Tailwind CSS, Streamlit
+- Frontend: React, Next.js, Tailwind CSS, Streamlit, Taipy
 - Tools & Deployment: Git, GitHub, Docker, Linux CLI
 
-Key Projects:
-1. LoanSense AI (ML, 2025 - Flagship): Explainable credit risk classifier using XGBoost and SHAP. Improved recall to 51.56% (+3.53 pp over 48.03% baseline) and F1 score to 57.12% (false negatives reduced from 382 to 356). Features a natural-language-to-SQL interface.
-2. EmployeeMate (AI Agents, 2025 - Flagship): Full-stack RAG assistant with FastAPI, React, LangChain, ChromaDB, CrossEncoder reranking (ms-marco-MiniLM-L-6-v2), conversational memory, prompt-injection guardrails, and local Ollama inference.
-3. SecurePay (Full-Stack, 2024): Java/Spring Boot banking fraud detection engine with 5 configurable rules evaluated in under 1 ms per transaction in an in-memory benchmark (single-node Spring Boot) and local Ollama anomaly explanations.
-4. PathFinder AI (ML, 2024): NLP-based resume analyzer using spaCy extracting 50+ competencies for skill-gap mapping and curriculum recommendations.
+MCA Flagship Projects (Bangalore Institute of Technology):
+1. LoanSense AI (ML Flagship, May 2026): Explainable credit risk classifier using XGBoost and SHAP. Improved recall to 51.56% (+3.53 pp over 48.03% baseline) and F1 score to 57.12% (false negatives reduced from 382 to 356). Features a natural-language-to-SQL interface.
+2. EmployeeMate (AI Agents Flagship, Sept 2026): Full-stack RAG assistant with FastAPI, React, LangChain, ChromaDB, CrossEncoder reranking (ms-marco-MiniLM-L-6-v2), conversational memory, prompt-injection guardrails, and local Ollama inference.
+3. SecurePay (Full-Stack, June 2026): Java/Spring Boot banking fraud detection engine with 5 configurable rules evaluated in under 1 ms per transaction in an in-memory benchmark (single-node Spring Boot) and local Ollama anomaly explanations.
+4. PathFinder AI (ML, May 2026): NLP-based resume analyzer using spaCy extracting 50+ competencies for skill-gap mapping and curriculum recommendations.
+
+BCA Projects & Research (St. Joseph's University):
+5. AI Mental Health Therapist Chatbot (AI Agents / NLP, April 2025): Empathetic conversational companion fine-tuned on MentalChat16k and Reddit datasets with dual-model inference (Local Transformer + Gemini API), crisis triage, and Taipy interface.
+6. Research Paper: Sustainable Development through ML, AI & IoT (May 2024): Author of paper on ML algorithms and IoT telemetry for smart agriculture, energy conservation, and environmental sustainability.
+7. Startup India Interactive Dashboard (Data Analytics, May 2025): Power BI dashboard with automated R preprocessing analyzing investment trends, sector distributions, and startup density across India.
+8. Telecom Customer Churn Analysis (Data Analytics & ML, 2025): Full-stack data science workflow on 7,043 subscriber accounts statistically proving customer satisfaction as primary churn driver over billing.
 
 Availability:
 Ashish is actively seeking AI/ML Engineer, Applied AI, and Data Science roles and internships (immediate onboarding, Bengaluru / remote).

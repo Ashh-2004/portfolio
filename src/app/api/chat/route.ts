@@ -20,14 +20,20 @@ CANDIDATE FACTS:
 - Name: ${portfolio.profile.name} | Location: ${portfolio.profile.location}
 - Status: MCA student at Bangalore Institute of Technology (BIT, expected 2027, CGPA: 8.57); BCA from St. Joseph's University (2022-2025, CGPA: 7.2).
 - Goal: Seeking AI/ML Engineer, Applied AI, and Data Science roles / internships (available for immediate onboarding).
-- Core Skills: Python, SQL, Java, Scikit-learn, XGBoost, SHAP, RAG (LangChain, ChromaDB, CrossEncoder reranking), FastAPI, Spring Boot, React, Next.js, Docker.
+- Core Skills: Python, SQL, Java, R, Scikit-learn, XGBoost, SHAP, RAG (LangChain, ChromaDB, CrossEncoder reranking), FastAPI, Spring Boot, React, Next.js, Power BI, Docker.
 - Contact: Email: ${portfolio.socials.email} | Phone: ${portfolio.socials.phone} | GitHub: ${portfolio.socials.github} | LinkedIn: ${portfolio.socials.linkedin}
 
-VERIFIED PROJECTS & METRICS:
-1. LoanSense AI (ML Flagship, 2025): Explainable credit risk classifier using XGBoost & SHAP. Evaluated vs Logistic Regression: achieved 51.56% recall (+3.53 pp over 48.03% baseline) and 57.12% F1 score (reduced FN from 382 to 356). FastAPI backend with NL-to-SQL query capability.
-2. EmployeeMate (AI Agents Flagship, 2025): Enterprise RAG HR assistant. 2-stage retrieval with dense embeddings and CrossEncoder reranker (ms-marco-MiniLM-L-6-v2), ChromaDB, conversation memory, prompt injection guardrails, FastAPI + React + local Ollama.
-3. SecurePay (Full-Stack, 2024): Java/Spring Boot banking fraud detection engine. Evaluated at sub-1 ms in-memory rule engine latency across 5 deterministic rules, with local Ollama explanations.
-4. PathFinder AI (ML, 2024): spaCy NLP resume parser extracting 50+ normalized skills from PDFs with visual skill-gap mapping against target roles.
+VERIFIED MCA CAPSTONES (Bangalore Institute of Technology):
+1. LoanSense AI (ML Flagship, May 2026): Explainable credit risk classifier using XGBoost & SHAP. Evaluated vs Logistic Regression: achieved 51.56% recall (+3.53 pp over baseline) and 57.12% F1 score (reduced FN from 382 to 356). FastAPI backend with NL-to-SQL query capability.
+2. EmployeeMate (AI Agents Flagship, Sept 2026): Enterprise RAG HR assistant. 2-stage retrieval with dense embeddings and CrossEncoder reranker (ms-marco-MiniLM-L-6-v2), ChromaDB, conversation memory, prompt injection guardrails, FastAPI + React + local Ollama.
+3. SecurePay (Full-Stack, June 2026): Java/Spring Boot banking fraud detection engine. Evaluated at sub-1 ms in-memory rule engine latency across 5 deterministic rules, with local Ollama explanations.
+4. PathFinder AI (ML, May 2026): spaCy NLP resume parser extracting 50+ normalized skills from PDFs with visual skill-gap mapping against target roles.
+
+VERIFIED BCA PROJECTS & RESEARCH (St. Joseph's University):
+5. AI Mental Health Therapist Chatbot (April 2025): Empathetic AI companion fine-tuned on MentalChat16k & Reddit datasets with dual-model inference (Local + Gemini API), crisis escalation triage, and Taipy interface.
+6. Research Paper: Sustainable Development through ML, AI & IoT (May 2024): Academic research paper by Ashish Ramana evaluating ML algorithms & IoT sensor telemetry for smart agriculture, energy conservation, and environmental sustainability.
+7. Startup India Dashboard (May 2025): Interactive Power BI dashboard with automated R preprocessing analyzing national funding patterns, sector distributions, and startup density across India.
+8. Telecom Customer Churn Analytics (2025): Full-stack analytics & predictive classification on 7,043 subscriber accounts statistically proving customer satisfaction as primary churn driver over billing.
 `.trim();
 }
 
@@ -37,37 +43,55 @@ function getLocalFallbackResponse(query: string): string {
 
   if (q.includes("loan") || q.includes("credit") || q.includes("risk") || q.includes("shap")) {
     return (
-      "LoanSense AI is an explainable credit risk classification system built with Python, XGBoost, and SHAP. " +
+      "LoanSense AI (May 2026) is an explainable credit risk classification system built with Python, XGBoost, and SHAP during Ashish's MCA. " +
       "It achieved 51.56% recall (a 3.53 pp increase over the 48.03% baseline) and a 57.12% F1 score (reducing false negatives from 382 to 356). " +
       "Repository: " +
-      (portfolio.projects.find((p) => p.slug === "loansense-ai")?.links.github || "https://github.com/Ashh-2004/LoanSense-AI")
+      (portfolio.projects.find((p) => p.slug === "loansense-ai")?.links.github || "https://github.com/Ashh-2004/loansense-AI")
     );
   }
 
   if (q.includes("employee") || q.includes("rag") || q.includes("agent") || q.includes("chroma")) {
     return (
-      "EmployeeMate is an enterprise RAG HR assistant built with FastAPI, React, LangChain, ChromaDB, and Docker. " +
+      "EmployeeMate (Sept 2026) is an enterprise RAG HR assistant built during Ashish's MCA with FastAPI, React, LangChain, ChromaDB, and Docker. " +
       "It implements a 2-stage retrieval pipeline using dense sentence embeddings and CrossEncoder reranking (ms-marco-MiniLM-L-6-v2) with prompt injection guardrails."
     );
   }
 
   if (q.includes("pathfinder") || q.includes("resume") || q.includes("spacy") || q.includes("nlp")) {
     return (
-      "PathFinder AI is an NLP-driven resume intelligence app built with Python, spaCy, and Streamlit. " +
+      "PathFinder AI (May 2026) is an NLP-driven resume intelligence app built during Ashish's MCA with Python, spaCy, and FastAPI. " +
       "It extracts competencies across 50+ normalized skills from PDF resumes and maps skill gaps against target roles."
-    );
-  }
-
-  if (q.includes("skill") || q.includes("stack") || q.includes("tech") || q.includes("python")) {
-    return (
-      "Ashish's core technical stack spans: Python, SQL, Java, Machine Learning (Scikit-learn, XGBoost, SHAP), Generative AI (RAG, LangChain, ChromaDB, CrossEncoder reranking), Backend (FastAPI, Spring Boot), and Deployment (Docker, Linux CLI)."
     );
   }
 
   if (q.includes("fraud") || q.includes("securepay") || q.includes("spring") || q.includes("java")) {
     return (
-      "SecurePay is a banking fraud detection engine built with Java and Spring Boot. " +
+      "SecurePay (June 2026) is a banking fraud detection engine built during Ashish's MCA with Java and Spring Boot. " +
       "It achieves sub-1 ms in-memory evaluation latency across 5 deterministic fraud rules with local Ollama compliance explanations."
+    );
+  }
+
+  if (q.includes("mental") || q.includes("health") || q.includes("therapist") || q.includes("chatbot")) {
+    return (
+      "During his BCA (April 2025), Ashish built an AI Mental Health Therapist Chatbot fine-tuned on MentalChat16k and Reddit datasets using Hugging Face Transformers and PyTorch, featuring dual-model inference with Gemini API and crisis escalation triage."
+    );
+  }
+
+  if (q.includes("paper") || q.includes("research") || q.includes("iot") || q.includes("sustainability")) {
+    return (
+      "Ashish authored an academic research paper titled 'Sustainable Development through ML, AI & IoT' (May 2024, BCA), evaluating the integration of predictive machine learning algorithms and real-time IoT sensors for smart agriculture and energy conservation."
+    );
+  }
+
+  if (q.includes("analytic") || q.includes("power bi") || q.includes("dashboard") || q.includes("churn") || q.includes("startup")) {
+    return (
+      "During his BCA, Ashish engineered multiple analytics projects including the Startup India Interactive Power BI dashboard with automated R data cleaning, and the Telecom Customer Churn analysis modeling 7,043 subscriber records."
+    );
+  }
+
+  if (q.includes("skill") || q.includes("stack") || q.includes("tech") || q.includes("python")) {
+    return (
+      "Ashish's core technical stack spans: Python, SQL, Java, R, Machine Learning (Scikit-learn, XGBoost, SHAP), Generative AI (RAG, LangChain, ChromaDB, CrossEncoder reranking), Data Analytics (Power BI, Tableau), Backend (FastAPI, Spring Boot), and Deployment (Docker, Linux CLI)."
     );
   }
 
@@ -79,9 +103,9 @@ function getLocalFallbackResponse(query: string): string {
   }
 
   return (
-    `M Ashish Ramana is an AI/ML Engineer pursuing his MCA at Bangalore Institute of Technology (BIT, expected 2027) with a BCA from St. Joseph's University. ` +
+    `M Ashish Ramana is an AI/ML Engineer pursuing his MCA at Bangalore Institute of Technology (BIT, expected 2027) with a BCA from St. Joseph's University (2022-2025). ` +
     `He specializes in practical ML pipelines (XGBoost, SHAP), RAG architectures (ChromaDB, CrossEncoder reranking), and high-performance backend systems (FastAPI, Spring Boot). ` +
-    `Ask about LoanSense AI, EmployeeMate, SecurePay, or PathFinder AI!`
+    `Ask about LoanSense AI, EmployeeMate, SecurePay, PathFinder AI, his research paper, or BCA analytics projects!`
   );
 }
 
