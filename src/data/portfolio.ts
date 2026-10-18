@@ -416,6 +416,10 @@ export const portfolio: PortfolioData = {
           src: "/projects/securepay/screenshot-2.png",
           caption: "Ollama generated anomaly justification report for compliance review",
         },
+        {
+          src: "/projects/securepay/screenshot-3.png",
+          caption: "Transaction telemetry, GLM-4/Ollama anomaly reasoning, and risk engine execution trace",
+        },
       ],
       featured: false,
     },
@@ -477,6 +481,14 @@ export const portfolio: PortfolioData = {
         {
           src: "/projects/pathfinder/screenshot-1.png",
           caption: "Resume and job description intake interface powered by spaCy NLP",
+        },
+        {
+          src: "/projects/pathfinder/screenshot-2.png",
+          caption: "Candidate alignment profile, 77% match score, and requirement matching",
+        },
+        {
+          src: "/projects/pathfinder/screenshot-3.png",
+          caption: "AI recommendations, upskilling roadmap, and credential verification",
         },
       ],
       featured: false,

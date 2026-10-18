@@ -38,6 +38,11 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     setActiveTab("overview");
   }, [project?.slug]);
 
+  // Reset image error whenever slide changes
+  useEffect(() => {
+    setImageError(false);
+  }, [currentSlide]);
+
   // Handle escape key to close
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
